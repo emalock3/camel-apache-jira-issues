@@ -1,0 +1,599 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>Camel: 2.13.0 - ASF JIRA</title>
+<script type="text/javascript">
+    if (!window.performance) {
+        window.mpPerformance = {};
+        window.mpPerformance.responseStart = new Date().getTime();
+    }
+</script>
+<meta name="application-name" content="JIRA" data-name="jira" data-version="6.1.5"><meta name="ajs-dev-mode" content="false">
+<meta name="ajs-context-path" content="/jira">
+<meta name="ajs-version-number" content="6.1.5">
+<meta name="ajs-build-number" content="6160">
+<meta name="ajs-is-beta" content="false">
+<meta name="ajs-is-rc" content="false">
+<meta name="ajs-is-snapshot" content="false">
+<meta name="ajs-is-milestone" content="false">
+<meta name="ajs-remote-user" content="">
+<meta name="ajs-remote-user-fullname" content="">
+<meta name="ajs-user-locale" content="en_UK">
+<meta name="ajs-user-locale-group-separator" content=",">
+<meta name="ajs-app-title" content="ASF JIRA">
+<meta name="ajs-keyboard-shortcuts-enabled" content="true">
+<meta name="ajs-enabled-dark-features" content="[&quot;app-switcher.new&quot;,&quot;com.atlassian.jira.darkfeature.CommonHeader&quot;,&quot;jira.frother.reporter.field&quot;,&quot;com.atlassian.jira.config.PDL&quot;,&quot;frother.assignee.field&quot;]">
+<meta name="ajs-date-relativize" content="true">
+<meta name="ajs-date-time" content="HH:mm">
+<meta name="ajs-date-day" content="EEEE HH:mm">
+<meta name="ajs-date-dmy" content="dd/MMM/yy">
+<meta name="ajs-date-complete" content="dd/MMM/yy HH:mm">
+<meta name="ajs-in-admin-mode" content="false">
+<meta name="ajs-is-sysadmin" content="false">
+<meta name="ajs-is-admin" content="false">
+<meta name="ajs-outgoing-mail-enabled" content="true">
+<meta name="ajs-whats-new-iframe-src-override" content=""> <meta name="ajs-whatsnew-full-link" content="https://docs.atlassian.com/jira/docs-061/whatsnew/iframe">
+
+
+    
+<meta id="atlassian-token" name="atlassian-token" content="A5KQ-2QAV-T4JA-FDED|1aff28c52c1b6cbffa64b9673e1cde1481672ee0|lout">
+
+
+
+<link rel="shortcut icon" href="/jira/s/en_UKxivfiu-1988229788/6160/7/_/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/jira/osd.jsp" title="Camel: 2.13.0 - ASF JIRA"/>
+
+    
+
+
+<!--[if IE]><![endif]-->
+<script type="text/javascript">var contextPath = '/jira';</script>
+<link type="text/css" rel="stylesheet" href="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/26/_/download/superbatch/css/batch.css" media="all">
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/26/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+8" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/26/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/437ea010dd0e02313f1cfb9247c6a4d3/_/download/contextbatch/css/atl.general,jira.global/batch.css" media="all">
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/26/_/download/superbatch/js/batch.js" ></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/26/_/download/superbatch/js/batch.js?conditionalComment=lte+IE+8" ></script>
+<![endif]-->
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/437ea010dd0e02313f1cfb9247c6a4d3/_/download/contextbatch/js/atl.general,jira.global/batch.js" ></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/1.0/_/download/batch/jira.webresources:ajaxhistory/jira.webresources:ajaxhistory.js" ></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/1.0/_/download/batch/jira.webresources:version-blocks/jira.webresources:version-blocks.js" ></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/3.2.2/_/download/batch/com.atlassian.gadgets.embedded:gadget-core-resources/com.atlassian.gadgets.embedded:gadget-core-resources.js" ></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/3.2.2/_/download/batch/com.atlassian.gadgets.embedded:gadget-container-resources/com.atlassian.gadgets.embedded:gadget-container-resources.js" ></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/3.2.2/_/download/batch/com.atlassian.gadgets.embedded:gadget-standalone-resources/com.atlassian.gadgets.embedded:gadget-standalone-resources.js" ></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/1.0/_/download/batch/jira.webresources:browseproject/jira.webresources:browseproject.js" ></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/1.0/_/download/batch/jira.webresources:calendar-en/jira.webresources:calendar-en.js" ></script>
+<script type="text/javascript" src="/jira/s/d41d8cd98f00b204e9800998ecf8427e/en_UKxivfiu-1988229788/6160/7/1.5/_/download/batch/com.atlassian.administration.atlassian-admin-quicksearch-jira:admin-quicksearch-webresources/com.atlassian.administration.atlassian-admin-quicksearch-jira:admin-quicksearch-webresources.js" ></script>
+
+<script type="text/javascript" src="/jira/rest/api/1.0/shortcuts/6160/18fa6fa3668051aa67f209e40ef253b5/shortcuts.js"></script>
+
+
+    
+    
+    
+    
+    <script type="text/javascript">window.dhtmlHistory.create();</script>
+
+</head>
+<body id="jira" class="aui-layout aui-theme-default " data-version="6.1.5">
+<div id="page">
+    <header id="header" role="banner">
+        
+
+
+
+    
+        
+            
+        
+    
+
+
+
+
+
+
+
+        
+
+
+
+
+        
+
+
+
+
+
+<fieldset class="parameters hidden dont-default-focus">
+    <input type="hidden" title="tzdetect.pref.tzid" value="Europe/London" />
+    <input type="hidden" title="tzdetect.pref.tzname" value="(GMT+00:00) London" />
+    <input type="hidden" title="tzdetect.pref.tzoffset" value="(GMT+00:00)" />
+    <input type="hidden" title="tzdetect.pref.tzdst" value="true" />
+    <input type="hidden" title="tzdetect.pref.nothanks" value="" />
+</fieldset>
+<nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-before"><a class="aui-dropdown2-trigger app-switcher-trigger" aria-owns="app-switcher" aria-haspopup="true" tabindex="0"><span class="aui-icon aui-icon-small aui-iconfont-appswitcher">Linked Applications</span></a><div id="app-switcher" class="aui-dropdown2 aui-style-default"><div class="app-switcher-loading">Loading&hellip;</div></div><script>
+            (function (NL) {
+                var initialise = function () {
+                    // For some milestones of AUI, the atlassian soy namespace was renamed to aui. Handle that here by ensuring that window.atlassian is defined.
+                    window.atlassian = window.atlassian || window.aui;
+                    new NL.AppSwitcher({
+                        dropdownContents: '#app-switcher'
+                    });
+                };
+                if (NL.AppSwitcher) {
+                    initialise();
+                } else {
+                    NL.onInit = initialise;
+                }
+            }(window.NL = (window.NL || {})));
+            window.NL.isUserAdmin = false</script></div><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="https://issues.apache.org/jira/secure/MyJiraHome.jspa"><img src="/jira/s/en_UKxivfiu-1988229788/6160/7/_/jira-logo-scaled.png" alt="ASF JIRA" /></a></h1><ul class='aui-nav'>
+
+
+
+
+<li><a class="aui-nav-link aui-dropdown2-ajax jira-ajax-menu aui-dropdown2-trigger "href="/jira/secure/Dashboard.jspa" id="home_link"  accessKey="d"  title="View and manage your dashboards"  aria-haspopup="true" aria-owns="home_link-content">Dashboards</a><div id="home_link-content" class="aui-dropdown2 aui-style-default" data-aui-dropdown2-ajax-key="home_link"></div></li><li><a class="aui-nav-link aui-dropdown2-ajax jira-ajax-menu aui-dropdown2-trigger "href="/jira/browse/CAMEL" id="browse_link"  accessKey="p"  title="View recent projects and browse a list of projects"  aria-haspopup="true" aria-owns="browse_link-content">Projects</a><div id="browse_link-content" class="aui-dropdown2 aui-style-default" data-aui-dropdown2-ajax-key="browse_link"></div></li><li><a class="aui-nav-link aui-dropdown2-ajax jira-ajax-menu aui-dropdown2-trigger "href="/jira/secure/IssueNavigator.jspa" id="find_link"  accessKey="i"  title="Search for issues and view recent issues"  aria-haspopup="true" aria-owns="find_link-content">Issues</a><div id="find_link-content" class="aui-dropdown2 aui-style-default" data-aui-dropdown2-ajax-key="find_link"></div></li><li><a class="aui-nav-link aui-dropdown2-ajax jira-ajax-menu aui-dropdown2-trigger "href="/jira/secure/GreenHopper.jspa" id="greenhopper_menu"  title="Manage your project with JIRA Agile"  aria-haspopup="true" aria-owns="greenhopper_menu-content">Agile</a><div id="greenhopper_menu-content" class="aui-dropdown2 aui-style-default" data-aui-dropdown2-ajax-key="greenhopper_menu"></div></li>
+</ul></div><div class="aui-header-secondary"><ul class='aui-nav'><li>
+    <form action="/jira/secure/QuickSearch.jspa" method="post" id="quicksearch" class="aui-quicksearch dont-default-focus ajs-dirty-warning-exempt">
+        <input id="quickSearchInput" class="search" type="text" title="Quick Search" placeholder="Quick Search" name="searchString" accessKey="q" />
+        <input type="submit" class="hidden" value="Search">
+    </form>
+</li>
+
+
+
+    <li id="system-help-menu">
+        <a class="aui-nav-link aui-dropdown2-trigger" aria-haspopup="true" aria-owns="system-help-menu-content" href="https://docs.atlassian.com/jira/docs-061/JIRA+Documentation"  target="_blank"  title="Help"><span class="aui-icon aui-icon-small aui-iconfont-help">Help</span></a>
+        <div id="system-help-menu-content" class="aui-dropdown2 aui-style-default">
+                            <div class="aui-dropdown2-section">
+                                                                <ul id="jira-help" class="aui-list-truncate">
+                                                            <li>
+                                    <a  id="view_help"   class=""  title="Goto the online documentation for JIRA" href="https://docs.atlassian.com/jira/docs-061/JIRA+Documentation"  target="_blank" >Online Help</a>
+                                </li>
+                                                            <li>
+                                    <a  id="gh_view_help"   class=""  title="Get help online for JIRA Agile" href="http://docs.atlassian.com/agile/docs-0630/JIRA+Agile+Documentation"  target="_blank" >JIRA Agile Help</a>
+                                </li>
+                                                            <li>
+                                    <a  id="gh_view_agile_answers"   class=""  title="Get answers about Agile" href="http://answers.atlassian.com/tags/agile/"  target="_blank" >Agile Answers</a>
+                                </li>
+                                                            <li>
+                                    <a  id="keyshortscuthelp"   class=""  title="Get more information about JIRA's Keyboard Shortcuts" href="/jira/secure/ViewKeyboardShortcuts!default.jspa"  target="_blank" >Keyboard Shortcuts</a>
+                                </li>
+                                                            <li>
+                                    <a  id="view_about"   class=""  title="Get more information about JIRA" href="/jira/secure/AboutPage.jspa" >About JIRA</a>
+                                </li>
+                                                            <li>
+                                    <a  id="view_credits"   class=""  title="See who did what" href="/jira/secure/JiraCreditsPage!default.jspa"  target="_blank" >JIRA Credits</a>
+                                </li>
+                                                            <li>
+                                    <a  id="whats-new-menu-link"   class=""   href="https://docs.atlassian.com/jira/docs-061/whatsnew/iframe" >What’s New</a>
+                                </li>
+                                                    </ul>
+                                    </div>
+                    </div>
+    </li>
+
+
+
+
+
+
+
+
+
+<li id="user-options">
+            <a class="aui-nav-link login-link" href="/jira/login.jsp?os_destination=%2Fbrowse%2FCAMEL%2Ffixforversion%2F12324786%3FselectedTab%3Dcom.atlassian.jira.plugin.system.project%253Aversion-issues-panel">Log In</a>
+                <div id="user-options-content" class="aui-dropdown2 aui-style-default">
+                            <div class="aui-dropdown2-section">
+                                                        </div>
+                    </div>
+    </li>
+</ul></div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    </header>
+    
+
+
+
+    <section id="content" role="main">
+        
+    <header class="aui-page-header"><div class="aui-page-header-inner"><div class="aui-page-header-image">
+                <span class="aui-avatar aui-avatar-large aui-avatar-project jira-system-avatar"><span class="aui-avatar-inner"><img id="project-avatar" alt="null" src="/jira/secure/projectavatar?pid=12311211&amp;avatarId=10011&amp;size=large" /></span></span>
+
+            </div><div class="aui-page-header-main">
+            <ol class="aui-nav aui-nav-breadcrumbs">
+                <li><a href="/jira/browse/CAMEL?selectedTab=com.atlassian.jira.plugin.system.project:summary-panel">Camel</a></li>
+            </ol>
+            <h1>2.13.0</h1>
+        </div><div class="aui-page-header-actions">
+            <ul class="aui-nav aui-nav-pagination">
+                
+                    
+                        <li class="aui-nav-previous">
+                            <a title="Browse previous version" href="/jira/browse/CAMEL/fixforversion/12326177"><span>2.12.4</span></a>
+                        </li>
+                    
+                    <li class="aui-nav-selected">
+                        <span>2.13.0</span>
+                    </li>
+                    
+                        <li class="aui-nav-next" >
+                            <a title="Browse next version" href="/jira/browse/CAMEL/fixforversion/12326053"><span>2.13.1</span></a>
+                        </li>
+                    
+                
+            </ul>
+        </div></div></header>
+
+    <div class="aui-page-panel"><div class="aui-page-panel-inner">
+            <div class="aui-page-panel-nav">
+                    <ul class="vertical tabs">
+                        
+                            <li class="  first">
+                                <a id="version-summary-panel-panel" class="browse-tab" href="/jira/browse/CAMEL/fixforversion/12324786?selectedTab=com.atlassian.jira.plugin.system.project%3Aversion-summary-panel"><strong>Summary</strong></a>
+                            </li>
+                        
+                            <li class="active ">
+                                <a id="version-issues-panel-panel" class="browse-tab" href="/jira/browse/CAMEL/fixforversion/12324786?selectedTab=com.atlassian.jira.plugin.system.project%3Aversion-issues-panel"><strong>Issues</strong></a>
+                            </li>
+                        
+                            <li class=" ">
+                                <a id="version-popularissues-panel-panel" class="browse-tab" href="/jira/browse/CAMEL/fixforversion/12324786?selectedTab=com.atlassian.jira.plugin.system.project%3Aversion-popularissues-panel"><strong>Popular Issues</strong></a>
+                            </li>
+                        
+                            <li class=" ">
+                                <a id="bamboo-release-tabpanel-panel" class="browse-tab" href="/jira/browse/CAMEL/fixforversion/12324786?selectedTab=com.atlassian.jira.plugin.ext.bamboo%3Abamboo-release-tabpanel"><strong>Release</strong></a>
+                            </li>
+                        
+                    </ul>
+                </div><!-- .aui-page-panel-nav -->
+            <section class="aui-page-panel-content" id="project-tab" data-project-key="CAMEL">
+                    <header class="aui-page-header"><div class="aui-page-header-inner"><div class="aui-page-header-main"><h2>Issues</h2></div></div></header><div class="tabpanel-modules">    <div class="tabpanel-modules-top"><div class="module" id="fragfilters">
+
+
+
+<div class="mod-content">
+    <div class="aui-group issue-filter-links">
+                    <div class="aui-item">
+            <ul class="aui-nav">
+                                    <li>
+                        <a class="issue-filter-link" data-type="version" id="filter_all" href="/jira/secure/IssueNavigator.jspa?reset=true&amp;mode=hide&amp;jqlQuery=fixVersion+%3D+%222.13.0%22+AND+project+%3D+CAMEL">All issues</a>
+                    </li>
+                                    <li>
+                        <a class="issue-filter-link" data-type="version" id="filter_mostimportant" href="/jira/secure/IssueNavigator.jspa?reset=true&amp;mode=hide&amp;jqlQuery=fixVersion+%3D+%222.13.0%22+AND+project+%3D+CAMEL+AND+resolution+%3D+Unresolved+ORDER+BY+priority+DESC">Unresolved</a>
+                    </li>
+                            </ul>
+        </div>
+                        <div class="aui-item">
+            <ul class="aui-nav">
+                                    <li>
+                        <a class="issue-filter-link" data-type="version" id="filter_addedrecently" href="/jira/secure/IssueNavigator.jspa?reset=true&amp;mode=hide&amp;jqlQuery=fixVersion+%3D+%222.13.0%22+AND+project+%3D+CAMEL+AND+created%3E%3D-1w+ORDER+BY+created+DESC">Added recently</a>
+                    </li>
+                                    <li>
+                        <a class="issue-filter-link" data-type="version" id="filter_resolvedrecently" href="/jira/secure/IssueNavigator.jspa?reset=true&amp;mode=hide&amp;jqlQuery=fixVersion+%3D+%222.13.0%22+AND+project+%3D+CAMEL+AND+resolutiondate+%3E%3D-1w+ORDER+BY+updated+DESC">Resolved recently</a>
+                    </li>
+                                    <li>
+                        <a class="issue-filter-link" data-type="version" id="filter_updatedrecently" href="/jira/secure/IssueNavigator.jspa?reset=true&amp;mode=hide&amp;jqlQuery=fixVersion+%3D+%222.13.0%22+AND+project+%3D+CAMEL+AND+updated%3E%3D-1w+ORDER+BY+updated+DESC">Updated recently</a>
+                    </li>
+                            </ul>
+        </div>
+                                    <div class="aui-item">
+            <ul class="aui-nav">
+                                    <li>
+                        <a class="issue-filter-link" data-type="version" id="filter_outstanding" href="/jira/secure/IssueNavigator.jspa?reset=true&amp;mode=hide&amp;jqlQuery=fixVersion+%3D+%222.13.0%22+AND+project+%3D+CAMEL+AND+resolution+%3D+Unresolved+ORDER+BY+updated+DESC">Outstanding</a>
+                    </li>
+                            </ul>
+        </div>
+        </div>
+</div>
+
+<script>
+    AJS.$(function () {
+        if (AJS.HelpTip) {
+            var helptip = new AJS.HelpTip({
+                id: "view.all.issues",
+                title: "View all issues",
+                bodyHtml: "See a list of the issues raised in this project so far.",
+                anchor: "#filter_all"
+            });
+            var dismiss = function () {
+                helptip.view.dismiss();
+            };
+            JIRA.Project.navigationTabs.addUnloadEvent("issues-panel-panel", dismiss);
+            JIRA.Project.navigationTabs.addUnloadEvent("version-issues-panel-panel", dismiss);
+            JIRA.Project.navigationTabs.addUnloadEvent("component-issues-panel-panel", dismiss);
+            helptip.show();
+        }
+    });
+</script>
+
+</div>    </div>    <div class="aui-group tabpanel-modules-split">        <div class="aui-item"><div class="module" id="fragunresolvedissuesbypriority">            <div class="mod-header">
+            <h3>Unresolved: By Priority</h3>
+        </div>
+        <div class="mod-content">
+            <table class="aui">
+                <thead>
+                    <tr>
+                        <th>Priority</th>
+                        <th style="width:15%;">Issues</th>
+                        <th style="width:30%;">Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                            <tr>
+                                                            <td class="name">                        <img alt="Major" height="16" src="/jira/images/icons/priorities/major.png" title="Major - Major loss of function." width="16" />
+             <a href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+AND+resolution+%3D+Unresolved+AND+priority+%3D+Major+ORDER+BY+key+DESC&mode=hide">Major</a></td>
+                                                        <td class="count">1</td>
+                            <td class="graph last"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+        <td style="width:100%" class="colour-bar-cont" valign="center">
+            <div class="colour-bar"></div>
+        </td>
+                <td  style="width:0%">&nbsp;&nbsp;&nbsp;100%</td>
+    </tr>
+    </table>
+</td>
+                        </tr>
+                                                        </tbody>
+            </table>
+            <p><a id="fragunresolvedissuesbypriority_more" href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+AND+resolution+%3D+Unresolved+ORDER+BY+priority+DESC%2C+key+DESC&mode=hide">View Issues</a></p>
+        </div>
+    </div><div class="module" id="fragunresolvedissuesbyassignee">
+
+
+            <div class="mod-header">
+            <h3>Unresolved: By Assignee</h3>
+        </div>
+        <div class="mod-content">
+            <table id="assignees" class="aui">
+                <thead>
+                    <tr>
+                        <th>Assignee</th>
+                        <th style="width:15%;">Issues</th>
+                        <th style="width:30%;">Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                                                                            <tr>
+                            <td class="name first"><a id="unresolved_assignee_cmoulliard" class="user-hover" rel="cmoulliard" href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+AND+resolution+%3D+Unresolved+AND+assignee+%3D+cmoulliard+ORDER+BY+priority+DESC&mode=hide">Charles Moulliard</a></td>
+                            <td class="count">1</td>
+                            <td class="graph last"><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+        <td style="width:100%" class="colour-bar-cont" valign="center">
+            <div class="colour-bar"></div>
+        </td>
+                <td  style="width:0%">&nbsp;&nbsp;&nbsp;100%</td>
+    </tr>
+    </table>
+</td>
+                        </tr>
+                                                        </tbody>
+            </table>
+            <p><a id="fragunresolvedissuesbyassignee_more" href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+AND+resolution+%3D+Unresolved+ORDER+BY+assignee+ASC%2C+priority+DESC&mode=hide">View Issues</a></p>
+        </div>
+    </div>        </div>        <div class="aui-item"><div class="module" id="fragstatussummary">            <div class="mod-header">
+            <h3>Status Summary</h3>
+        </div>
+        <div class="mod-content">
+            <table class="aui">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th style="width:15%;">Issues</th>
+                        <th style="width:30%;">Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                            <tr>
+                            <td>
+                                <a href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+AND+status+%3D+Open+ORDER+BY+priority+DESC&mode=hide">
+                                                                        
+
+<img src="/jira/images/icons/statuses/open.png" width="16" height="16" alt="Open" title="Open - The issue is open and ready for the assignee to start work on it."> Open
+                                </a>
+                            </td>
+                            <td class="cell-type-collapsed">1</td>
+                            <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+        <td width="1px" class="colour-bar-cont" valign="center">
+            <div class="colour-bar"></div>
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+</td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+AND+status+%3D+Resolved+ORDER+BY+priority+DESC&mode=hide">
+                                                                        
+
+<img src="/jira/images/icons/statuses/resolved.png" width="16" height="16" alt="Resolved" title="Resolved - A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed."> Resolved
+                                </a>
+                            </td>
+                            <td class="cell-type-collapsed">420</td>
+                            <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+        <td style="width:99%" class="colour-bar-cont" valign="center">
+            <div class="colour-bar"></div>
+        </td>
+                <td  style="width:1%">&nbsp;&nbsp;&nbsp;99%</td>
+    </tr>
+    </table>
+</td>
+                        </tr>
+                                            <tr>
+                            <td>
+                                <a href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+AND+status+%3D+Closed+ORDER+BY+priority+DESC&mode=hide">
+                                                                        
+
+<img src="/jira/images/icons/statuses/closed.png" width="16" height="16" alt="Closed" title="Closed - The issue is considered finished, the resolution is correct. Issues which are closed can be reopened."> Closed
+                                </a>
+                            </td>
+                            <td class="cell-type-collapsed">4</td>
+                            <td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+        <td style="width:5%" class="colour-bar-cont" valign="center">
+            <div class="colour-bar"></div>
+        </td>
+                <td  style="width:95%">&nbsp;&nbsp;&nbsp;1%</td>
+    </tr>
+    </table>
+</td>
+                        </tr>
+                                    </tbody>
+            </table>
+            <p><a id="fragstatussummary_more" href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+ORDER+BY+status+DESC%2C+priority+DESC&mode=hide">View Issues</a></p>
+        </div>
+    </div><div class="module" id="fragunresolvedissuesbycomponent">
+
+
+            <div class="mod-header">
+            <h3>Unresolved: By Component</h3>
+        </div>
+        <div class="mod-content">
+            <table id="components" class="aui">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th style="width:45%;">Issues</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                                                                                                                <tr>
+                                <td>
+                                    <span class="aui-icon jira-icon-components"></span>
+                                    <a id="component_12319201" href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+AND+resolution+%3D+Unresolved+AND+component+%3D+camel-cdi+ORDER+BY+priority+DESC&mode=hide" title="camel-cdi">camel-cdi</a>
+                                </td>
+                                <td class="cell-type-collapsed">1</td>
+                            </tr>
+                                                                                </tbody>
+            </table>
+            <p><a id="fragunresolvedissuesbycomponent_more" href="/jira/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+CAMEL+AND+fixVersion+%3D+%222.13.0%22+AND+resolution+%3D+Unresolved+ORDER+BY+component+ASC%2C+priority+DESC&mode=hide">View Issues</a></p>
+        </div>
+    </div>        </div>    </div></div>
+                </section><!-- .aui-page-panel-content -->
+        </div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel -->
+
+<fieldset class="hidden parameters">
+    <input type="hidden" id="project-key" value="CAMEL"/>
+    <input type="hidden" id="version-id" value="12324786"/>
+</fieldset>
+
+
+    </section>
+    <footer id="footer" role="contentinfo">
+        
+        
+
+
+
+<div class="footer-body">
+    <ul>
+        <li>
+                        <a href="http://www.atlassian.com/software/jira">Atlassian JIRA</a>
+
+                                                    
+                        
+            <span id="footer-build-information">(v6.1.5#6160-<span title='a61a0fc278117a0da0ec9b89167b8f29b6afdab2' data-commit-id='a61a0fc278117a0da0ec9b89167b8f29b6afdab2}'>sha1:a61a0fc</span>)</span>
+        </li>
+        <li>
+            <a id="about-link" href="/jira/secure/AboutPage.jspa">About JIRA</a>
+        </li>
+        <li>
+                                    <a id="footer-report-problem-link" href="/jira/secure/CreateIssue!default.jspa">Report a problem</a>
+        </li>
+    </ul>
+            <ul>
+            <li class="licensemessage">
+                                    Powered by a free Atlassian <a href='http://www.atlassian.com/software/jira'>JIRA</a> open source license for Apache Software Foundation. Try JIRA - <a href='http://www.atlassian.com/software/jira'>bug tracking software</a> for <i>your</i> team.
+
+                            </li>
+        </ul>
+    </div>
+
+<form id="jira_request_timing_info" class="dont-default-focus" >
+	<fieldset class="parameters hidden">
+		<input type="hidden" title="jira.request.start.millis" value="1393298376748" />
+		<input type="hidden" title="jira.request.server.time" value="160" />
+		<input type="hidden" title="jira.request.id" value="199x16922299x3" />
+		<input type="hidden" title="jira.session.expiry.time" value="1393316373949" />
+		<input type="hidden" title="jira.session.expiry.in.mins" value="299" />
+		<input id="jiraConcurrentRequests" type="hidden" name="jira.request.concurrent.requests" value="3" />
+	</fieldset>
+</form>
+<!--
+	                 REQUEST ID : 199x16922299x3
+	          REQUEST TIMESTAMP : [25/Feb/2014:03:19:36 +0000]
+	               REQUEST TIME : 0.1600
+	                 ASESSIONID : 1v9tkyl
+	        CONCURRENT REQUESTS : 3
+
+	                      db.reads : name=db.reads; inv=6; ms=5; cpu=0; rss=0;
+	                      db.conns : name=db.conns; inv=6; ms=5; cpu=0; rss=0;
+-->
+
+
+
+
+
+
+
+
+
+
+<fieldset class="hidden parameters">
+    <input type="hidden" title="loggedInUser" value="">
+    <input type="hidden" title="ajaxTimeout" value="The call to the JIRA server did not complete within the timeout period.  We are unsure of the result of this operation.">
+    <input type="hidden" title="JiraVersion" value="6.1.5" />
+    <input type="hidden" title="ajaxUnauthorised" value="You are not authorised to perform this operation.  Please log in.">
+    <input type="hidden" title="baseURL" value="https://issues.apache.org:443/jira">
+    <input type="hidden" title="ajaxCommsError" value="The JIRA server could not be contacted.  This may be a temporary glitch or the server may be down.">
+    <input type="hidden" title="ajaxServerError" value="The JIRA server was contacted but has returned an error response. We are unsure of the result of this operation.">
+    <input type="hidden" title="ajaxErrorCloseDialog" value="Close this dialog and press refresh in your browser">
+    <input type="hidden" title="ajaxErrorDialogHeading" value="Communications Breakdown">
+
+    <input type="hidden" title="dirtyMessage" value="You have entered new data on this page. If you navigate away from this page without first saving your data, the changes will be lost.">
+    <input type="hidden" title="dirtyDialogMessage" value="You have entered new data in this dialog. If you navigate away from this dialog without first saving your data, the changes will be lost. Click cancel to return to the dialog.">
+    <input type="hidden" title="keyType" value="Type">
+    <input type="hidden" title="keyThen" value="then">
+    <input type="hidden" title="dblClickToExpand" value="Double click to expand">
+    <input type="hidden" title="actions" value="Actions">
+    <input type="hidden" title="removeItem" value="Remove">
+    <input type="hidden" title="workflow" value="Workflow">
+    <input type="hidden" title="labelNew" value="New Label">
+    <input type="hidden" title="issueActionsHint" value="Begin typing for available operations or press down to see all">
+    <input type="hidden" title="closelink" value="Close">
+    <input type="hidden" title="dotOperations" value="Operations">
+    <input type="hidden" title="dotLoading" value="Loading...">
+    <input type="hidden" title="frotherSuggestions" value="Suggestions">
+    <input type="hidden" title="frotherNomatches" value="No Matches">
+    <input type="hidden" title="multiselectVersionsError" value="{0} is not a valid version.">
+    <input type="hidden" title="multiselectComponentsError" value="{0} is not a valid component.">
+    <input type="hidden" title="multiselectGenericError" value="The value {0} is invalid.">
+</fieldset>
+
+    </footer>
+</div>
+</body>
+</html>
