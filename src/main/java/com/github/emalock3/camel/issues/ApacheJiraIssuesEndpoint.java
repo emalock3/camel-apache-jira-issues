@@ -40,19 +40,19 @@ public class ApacheJiraIssuesEndpoint extends ProcessorEndpoint {
 				return new IssuesStatusSummaryProducer(endpoint);
 			}
 		},
-		UnresolvedByAssigneeIssues {
+		UnresolvedIssuesByAssignee {
 			Producer create(Endpoint endpoint) {
-				return new UnresolvedByAssigneeIssuesProducer(endpoint);
+				return new UnresolvedIssuesByAssigneeProducer(endpoint);
 			}
 		},
-		UnresolvedByComponentIssues {
+		UnresolvedIssuesByComponent {
 			Producer create(Endpoint endpoint) {
-				return new UnresolvedByComponentIssuesProducer(endpoint);
+				return new UnresolvedIssuesByComponentProducer(endpoint);
 			}
 		},
-		UnresolvedByPriorityIssues {
+		UnresolvedIssuesByPriority {
 			Producer create(Endpoint endpoint) {
-				return new UnresolvedByPriorityIssuesProducer(endpoint);
+				return new UnresolvedIssuesByPriorityProducer(endpoint);
 			}
 		};
 		

@@ -9,17 +9,17 @@ import org.jsoup.nodes.Element;
 import lombok.Value;
 
 @Value
-public class UnresolvedByComponentIssues {
+public class UnresolvedIssuesByComponent {
 	String component;
 	int issuesNum;
 	
-	public static List<UnresolvedByComponentIssues> from(Document doc) {
-		List<UnresolvedByComponentIssues> result = new ArrayList<>();
+	public static List<UnresolvedIssuesByComponent> from(Document doc) {
+		List<UnresolvedIssuesByComponent> result = new ArrayList<>();
 		for (Element elem : doc.select(
 				"#fragunresolvedissuesbycomponent table.aui > tbody > tr")) {
 			String component = elem.select("> td:nth-of-type(1) > a").text().trim();
 			int issuesNum = Integer.parseInt(elem.select("> td:nth-of-type(2)").text());
-			result.add(new UnresolvedByComponentIssues(component, issuesNum));
+			result.add(new UnresolvedIssuesByComponent(component, issuesNum));
 		}
 		return result;
 	}

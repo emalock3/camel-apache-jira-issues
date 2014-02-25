@@ -9,13 +9,13 @@ import org.jsoup.nodes.Element;
 import lombok.Value;
 
 @Value
-public class UnresolvedByAssigneeIssues {
+public class UnresolvedIssuesByAssignee {
 	String assignee;
 	int issuesNum;
 	double percentage;
 	
-	public static List<UnresolvedByAssigneeIssues> from(Document doc) {
-		List<UnresolvedByAssigneeIssues> result = new ArrayList<>();
+	public static List<UnresolvedIssuesByAssignee> from(Document doc) {
+		List<UnresolvedIssuesByAssignee> result = new ArrayList<>();
 		for (Element elem : doc.select(
 				"#fragunresolvedissuesbyassignee table.aui > tbody > tr")) {
 			String assignee = elem.select("> td.name > a").text();
@@ -23,7 +23,7 @@ public class UnresolvedByAssigneeIssues {
 			String ps = elem.select("> td.graph tr > td:nth-of-type(2)")
 					.text().replace("\u00a0", "").replace("%", "").trim();
 			double percentage = ps.isEmpty() ? 0.0 : Double.parseDouble(ps);
-			result.add(new UnresolvedByAssigneeIssues(assignee, issuesNum, percentage));
+			result.add(new UnresolvedIssuesByAssignee(assignee, issuesNum, percentage));
 		}
 		return result;
 	}
